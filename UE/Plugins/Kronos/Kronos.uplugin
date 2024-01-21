@@ -1,0 +1,48 @@
+{
+	"FileVersion": 3,
+	"Version": 16,
+	"VersionName": "2.0.2",
+	"FriendlyName": "Kronos Matchmaking",
+	"Description": "Online Subsystem based matchmaking solution for Unreal Engine.",
+	"Category": "Online",
+	"CreatedBy": "Horizon Games",
+	"CreatedByURL": "",
+	"DocsURL": "https://horizongames.gitbook.io/kronos-matchmaking/",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/3bb715b171684d23b2794bc34cb0a7da",
+	"SupportURL": "mailto:horizongames.contact@gmail.com",
+	"EngineVersion": "5.3.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "Kronos",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "KronosEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineFramework",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		}
+	]
+}
